@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 8vh 10vw;
+  background-color: hsl(0, 0%, 98%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  body {
+    padding: 10vh 5vw;
+  }
+}
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.presentation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation__subtitle {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+.presentation__title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+.presentation__description {
+  width: 45vw;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgb(163, 165, 174);
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 50px;
+}
+
+.left-card, .center-cards, .right-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.center-cards {
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 90%;
+  height: 180px;
+  padding: 10px 20px;
+  background-color: hsl(100, 100%, 100%);
+  border-top: 4px solid;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(163, 165, 174, 0.5);
+}
+
+.card--supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.card--team-builder {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.card--karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.card--calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+.card__title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.card__description {
+  font-size: 1.3rem;
+  color: rgb(163, 165, 174);
+}
+
+.card__icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=desktop.css.map */

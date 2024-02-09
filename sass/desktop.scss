@@ -1,0 +1,84 @@
+@import 'guide.scss';
+
+// Main Container
+.main-wrapper {
+	@include flexbox(column, space-between, null, 50px);
+	font-family: $primary-font;
+}
+
+// Presentation Section
+.presentation-section {
+	@include flexbox(column, center, center);
+}
+.presentation__subtitle {
+	margin: 0;
+	font-size: $lg-size;
+	font-weight: $light;
+	color: $very-dark-blue;
+}
+.presentation__title {
+	margin: 0;
+	font-size: $lg-size;
+	font-weight: $semi-bold;
+	color: $very-dark-blue;
+}
+.presentation__description {
+	width: 45vw;
+	margin: 0;
+	text-align: center;
+	font-size: $sm-size;
+	color: $grayish-blue;
+}
+
+// Cards Section
+.cards-section {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 0 50px;
+}
+.left-card, .center-cards, .right-card {
+	@include flexbox(column, center, center);
+	padding: 10px;
+}
+.center-cards {
+	gap: 20px;
+}
+.card {
+	@include flexbox(column);
+	position: relative;
+	width: 90%;
+	height: 180px;
+	padding: 10px 20px;
+	background-color: $white;
+	border-top: 4px solid;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px rgba(163, 165, 174, 0.5);
+}
+.card--supervisor {
+	border-color: $cyan;
+}
+.card--team-builder {
+	border-color: $red;
+}
+.card--karma {
+	border-color: $orange
+}
+.card--calculator {
+	border-color: $blue;
+}
+.card__title {
+	margin: 0;
+	font-size: $sm-size;
+	color: $very-dark-blue;
+}
+.card__description {
+	font-size: 1.3rem;
+	color: $grayish-blue;
+}
+.card__icon {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+}
