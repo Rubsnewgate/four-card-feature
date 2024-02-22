@@ -16,12 +16,18 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
+@media screen and (max-width: 541px) {
+  body {
+    height: auto;
+    padding: 50px 10px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1025px) {
   body {
     padding: 10vh 5vw;
   }
 }
-.cards-section {
+.cards {
   padding: 0;
 }
 

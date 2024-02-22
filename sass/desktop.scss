@@ -7,16 +7,16 @@
 }
 
 // Presentation Section
-.presentation-section {
+.presentation {
 	@include flexbox(column, center, center);
 }
-.presentation__subtitle {
+.presentation__title {
 	margin: 0;
 	font-size: $lg-size;
 	font-weight: $light;
 	color: $very-dark-blue;
 }
-.presentation__title {
+.presentation__subtitle {
 	margin: 0;
 	font-size: $lg-size;
 	font-weight: $semi-bold;
@@ -31,7 +31,7 @@
 }
 
 // Cards Section
-.cards-section {
+.cards {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	padding: 0 50px;
@@ -54,16 +54,16 @@
 	border-radius: 10px;
 	box-shadow: 0 4px 10px rgba(163, 165, 174, 0.5);
 }
-.card--supervisor {
+.card-supervisor {
 	border-color: $cyan;
 }
-.card--team-builder {
+.card-team-builder {
 	border-color: $red;
 }
-.card--karma {
+.card-karma {
 	border-color: $orange
 }
-.card--calculator {
+.card-calculator {
 	border-color: $blue;
 }
 .card__title {

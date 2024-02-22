@@ -43,7 +43,7 @@ body {
   width: 100%;
 }
 
-.cards-section {
+.cards {
   grid-template-columns: 1fr;
   padding: 0;
 }

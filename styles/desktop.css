@@ -16,6 +16,12 @@ body {
   background-color: hsl(0, 0%, 98%);
 }
 
+@media screen and (max-width: 541px) {
+  body {
+    height: auto;
+    padding: 50px 10px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1025px) {
   body {
     padding: 10vh 5vw;
@@ -29,21 +35,21 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.presentation-section {
+.presentation {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.presentation__subtitle {
+.presentation__title {
   margin: 0;
   font-size: 3rem;
   font-weight: 200;
   color: hsl(234, 12%, 34%);
 }
 
-.presentation__title {
+.presentation__subtitle {
   margin: 0;
   font-size: 3rem;
   font-weight: 600;
@@ -58,7 +64,7 @@ body {
   color: rgb(163, 165, 174);
 }
 
-.cards-section {
+.cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 50px;
@@ -89,19 +95,19 @@ body {
   box-shadow: 0 4px 10px rgba(163, 165, 174, 0.5);
 }
 
-.card--supervisor {
+.card-supervisor {
   border-color: hsl(180, 62%, 55%);
 }
 
-.card--team-builder {
+.card-team-builder {
   border-color: hsl(0, 78%, 62%);
 }
 
-.card--karma {
+.card-karma {
   border-color: hsl(34, 97%, 64%);
 }
 
-.card--calculator {
+.card-calculator {
   border-color: hsl(212, 86%, 64%);
 }
 
